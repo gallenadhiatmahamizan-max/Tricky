@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d18">
+  <title>Hand Gesture AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>HAND GESTURE AI</h1>
+  <p>Real-time hand tracking &amp; gesture recognition</p>
+
+  <main class="panel">
+    <div class="camera">
+      <video id="video" autoplay playsinline muted></video>
+      <canvas id="canvas"></canvas>
+    </div>
+
+    <div class="info">
+      <span><span class="dot"></span>HAND TRACKING</span>
+      <span id="handCount">0 hand</span>
+    </div>
+
+    <div id="gesture">Belum ada gesture</div>
+    <p id="status">Tekan tombol untuk memulai AI.</p>
+
+    <button id="start">NYALAKAN KAMERA</button>
+    <button id="stop" hidden>MATIKAN KAMERA</button>
+  </main>
+
+  <p>✋ Open Palm · ✊ Fist · ✌️ Victory</p>
+  <p class="note">AI menggunakan MediaPipe Gesture Recognizer.</p>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
